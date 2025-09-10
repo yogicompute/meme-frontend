@@ -261,7 +261,7 @@
 				try {
 					// API call #1 - Translation
 					const translateRes = await fetch(
-						"https://meme-translate-backend-lr2unr8t0-yogenderashells-projects.vercel.app/api/translate",
+						"https://meme-translate-backend.vercel.app/api/translate",
 						{
 							method: "POST",
 							headers: { "Content-Type": "application/json" },
@@ -276,7 +276,7 @@
 
 					// API call #2 - Meme generation
 					const memeRes = await fetch(
-						"https://meme-translate-backend-lr2unr8t0-yogenderashells-projects.vercel.app/api/memes",
+						"https://meme-translate-backend.vercel.app/api/memes",
 						{
 							method: "POST",
 							headers: { "Content-Type": "application/json" },
