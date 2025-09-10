@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Meme Translator - A translator app with memes</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="full">
+			<h1 class="h">Meme Translate</h1>
+			<div class="fl">
+				<input
+					id="textInput"
+					class="inp adlam-display-regular"
+					type="text"
+					autocorrect="off"
+					placeholder="Enter text to translate" />
+				<div class="custom-select">
+					<div class="selected">Select Language</div>
+					<ul class="options">
+						<li data-value="ab">Abkhazian - ab</li>
+						<li data-value="aa">Afar - aa</li>
+						<li data-value="af">Afrikaans - af</li>
+						<li data-value="ak">Akan - ak</li>
+						<li data-value="sq">Albanian - sq</li>
+						<li data-value="am">Amharic - am</li>
+						<li data-value="ar">Arabic - ar</li>
+						<li data-value="an">Aragonese - an</li>
+						<li data-value="hy">Armenian - hy</li>
+						<li data-value="as">Assamese - as</li>
+						<li data-value="av">Avaric - av</li>
+						<li data-value="ae">Avestan - ae</li>
+						<li data-value="ay">Aymara - ay</li>
+						<li data-value="az">Azerbaijani - az</li>
+						<li data-value="bm">Bambara - bm</li>
+						<li data-value="ba">Bashkir - ba</li>
+						<li data-value="eu">Basque - eu</li>
+						<li data-value="be">Belarusian - be</li>
+						<li data-value="bn">Bengali - bn</li>
+						<li data-value="bh">Bihari - bh</li>
+						<li data-value="bi">Bislama - bi</li>
+						<li data-value="bs">Bosnian - bs</li>
+						<li data-value="br">Breton - br</li>
+						<li data-value="bg">Bulgarian - bg</li>
+						<li data-value="my">Burmese - my</li>
+						<li data-value="ca">Catalan - ca</li>
+						<li data-value="ch">Chamorro - ch</li>
+						<li data-value="ce">Chechen - ce</li>
+						<li data-value="ny">Chichewa - ny</li>
+						<li data-value="zh">Chinese - zh</li>
+						<li data-value="cu">Church Slavic - cu</li>
+						<li data-value="cv">Chuvash - cv</li>
+						<li data-value="kw">Cornish - kw</li>
+						<li data-value="co">Corsican - co</li>
+						<li data-value="cr">Cree - cr</li>
+						<li data-value="hr">Croatian - hr</li>
+						<li data-value="cs">Czech - cs</li>
+						<li data-value="da">Danish - da</li>
+						<li data-value="dv">Divehi - dv</li>
+						<li data-value="nl">Dutch - nl</li>
+						<li data-value="dz">Dzongkha - dz</li>
+						<li data-value="en">English - en</li>
+						<li data-value="eo">Esperanto - eo</li>
+						<li data-value="et">Estonian - et</li>
+						<li data-value="ee">Ewe - ee</li>
+						<li data-value="fo">Faroese - fo</li>
+						<li data-value="fj">Fijian - fj</li>
+						<li data-value="fi">Finnish - fi</li>
+						<li data-value="fr">French - fr</li>
+						<li data-value="ff">Fula - ff</li>
+						<li data-value="gd">Scottish Gaelic - gd</li>
+						<li data-value="gl">Galician - gl</li>
+						<li data-value="lg">Ganda - lg</li>
+						<li data-value="ka">Georgian - ka</li>
+						<li data-value="de">German - de</li>
+						<li data-value="el">Greek - el</li>
+						<li data-value="gn">Guaraní - gn</li>
+						<li data-value="gu">Gujarati - gu</li>
+						<li data-value="ht">Haitian - ht</li>
+						<li data-value="ha">Hausa - ha</li>
+						<li data-value="he">Hebrew - he</li>
+						<li data-value="hz">Herero - hz</li>
+						<li data-value="hi">Hindi - hi</li>
+						<li data-value="ho">Hiri Motu - ho</li>
+						<li data-value="hu">Hungarian - hu</li>
+						<li data-value="is">Icelandic - is</li>
+						<li data-value="io">Ido - io</li>
+						<li data-value="ig">Igbo - ig</li>
+						<li data-value="id">Indonesian - id</li>
+						<li data-value="ia">Interlingua - ia</li>
+						<li data-value="ie">Interlingue - ie</li>
+						<li data-value="iu">Inuktitut - iu</li>
+						<li data-value="ik">Inupiaq - ik</li>
+						<li data-value="ga">Irish - ga</li>
+						<li data-value="it">Italian - it</li>
+						<li data-value="ja">Japanese - ja</li>
+						<li data-value="jv">Javanese - jv</li>
+						<li data-value="kl">Kalaallisut - kl</li>
+						<li data-value="kn">Kannada - kn</li>
+						<li data-value="kr">Kanuri - kr</li>
+						<li data-value="ks">Kashmiri - ks</li>
+						<li data-value="kk">Kazakh - kk</li>
+						<li data-value="km">Khmer - km</li>
+						<li data-value="ki">Kikuyu - ki</li>
+						<li data-value="rw">Kinyarwanda - rw</li>
+						<li data-value="ky">Kyrgyz - ky</li>
+						<li data-value="kv">Komi - kv</li>
+						<li data-value="kg">Kongo - kg</li>
+						<li data-value="ko">Korean - ko</li>
+						<li data-value="kj">Kwanyama - kj</li>
+						<li data-value="ku">Kurdish - ku</li>
+						<li data-value="lo">Lao - lo</li>
+						<li data-value="la">Latin - la</li>
+						<li data-value="lv">Latvian - lv</li>
+						<li data-value="li">Limburgish - li</li>
+						<li data-value="ln">Lingala - ln</li>
+						<li data-value="lt">Lithuanian - lt</li>
+						<li data-value="lu">Luba-Katanga - lu</li>
+						<li data-value="lb">Luxembourgish - lb</li>
+						<li data-value="mk">Macedonian - mk</li>
+						<li data-value="mg">Malagasy - mg</li>
+						<li data-value="ms">Malay - ms</li>
+						<li data-value="ml">Malayalam - ml</li>
+						<li data-value="mt">Maltese - mt</li>
+						<li data-value="gv">Manx - gv</li>
+						<li data-value="mi">Maori - mi</li>
+						<li data-value="mr">Marathi - mr</li>
+						<li data-value="mh">Marshallese - mh</li>
+						<li data-value="mn">Mongolian - mn</li>
+						<li data-value="na">Nauru - na</li>
+						<li data-value="nv">Navajo - nv</li>
+						<li data-value="nd">Northern Ndebele - nd</li>
+						<li data-value="nr">Southern Ndebele - nr</li>
+						<li data-value="ng">Ndonga - ng</li>
+						<li data-value="ne">Nepali - ne</li>
+						<li data-value="se">Northern Sami - se</li>
+						<li data-value="no">Norwegian - no</li>
+						<li data-value="nb">Norwegian Bokmål - nb</li>
+						<li data-value="nn">Norwegian Nynorsk - nn</li>
+						<li data-value="ii">Sichuan Yi - ii</li>
+						<li data-value="oc">Occitan - oc</li>
+						<li data-value="oj">Ojibwa - oj</li>
+						<li data-value="or">Oriya - or</li>
+						<li data-value="om">Oromo - om</li>
+						<li data-value="os">Ossetian - os</li>
+						<li data-value="pi">Pali - pi</li>
+						<li data-value="pa">Punjabi - pa</li>
+						<li data-value="ps">Pashto - ps</li>
+						<li data-value="fa">Persian - fa</li>
+						<li data-value="pl">Polish - pl</li>
+						<li data-value="pt">Portuguese - pt</li>
+						<li data-value="qu">Quechua - qu</li>
+						<li data-value="ro">Romanian - ro</li>
+						<li data-value="rm">Romansh - rm</li>
+						<li data-value="rn">Rundi - rn</li>
+						<li data-value="ru">Russian - ru</li>
+						<li data-value="sm">Samoan - sm</li>
+						<li data-value="sg">Sango - sg</li>
+						<li data-value="sa">Sanskrit - sa</li>
+						<li data-value="sc">Sardinian - sc</li>
+						<li data-value="sr">Serbian - sr</li>
+						<li data-value="sn">Shona - sn</li>
+						<li data-value="sd">Sindhi - sd</li>
+						<li data-value="si">Sinhala - si</li>
+						<li data-value="sk">Slovak - sk</li>
+						<li data-value="sl">Slovenian - sl</li>
+						<li data-value="so">Somali - so</li>
+						<li data-value="st">Southern Sotho - st</li>
+						<li data-value="es">Spanish - es</li>
+						<li data-value="su">Sundanese - su</li>
+						<li data-value="sw">Swahili - sw</li>
+						<li data-value="ss">Swati - ss</li>
+						<li data-value="sv">Swedish - sv</li>
+						<li data-value="tl">Tagalog - tl</li>
+						<li data-value="ty">Tahitian - ty</li>
+						<li data-value="tg">Tajik - tg</li>
+						<li data-value="ta">Tamil - ta</li>
+						<li data-value="tt">Tatar - tt</li>
+						<li data-value="te">Telugu - te</li>
+						<li data-value="th">Thai - th</li>
+						<li data-value="bo">Tibetan - bo</li>
+						<li data-value="ti">Tigrinya - ti</li>
+						<li data-value="to">Tonga - to</li>
+						<li data-value="ts">Tsonga - ts</li>
+						<li data-value="tn">Tswana - tn</li>
+						<li data-value="tr">Turkish - tr</li>
+						<li data-value="tk">Turkmen - tk</li>
+						<li data-value="tw">Twi - tw</li>
+						<li data-value="ug">Uighur - ug</li>
+						<li data-value="uk">Ukrainian - uk</li>
+						<li data-value="ur">Urdu - ur</li>
+						<li data-value="uz">Uzbek - uz</li>
+						<li data-value="ve">Venda - ve</li>
+						<li data-value="vi">Vietnamese - vi</li>
+						<li data-value="vo">Volapük - vo</li>
+						<li data-value="wa">Walloon - wa</li>
+						<li data-value="cy">Welsh - cy</li>
+						<li data-value="wo">Wolof - wo</li>
+						<li data-value="xh">Xhosa - xh</li>
+						<li data-value="yi">Yiddish - yi</li>
+						<li data-value="yo">Yoruba - yo</li>
+						<li data-value="za">Zhuang - za</li>
+						<li data-value="zu">Zulu - zu</li>
+					</ul>
+				</div>
+			</div>
+			<div class="lds-ring" id="loader">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div id="results" class="results"></div>
+		</div>
+
+		<script>
+			const input = document.getElementById("textInput");
+			const loader = document.getElementById("loader");
+			const select = document.querySelector(".custom-select");
+			const selected = select.querySelector(".selected");
+			const options = select.querySelector(".options");
+
+			let currentLang = "hi"; // default target language
+
+			// Show/hide loader
+			function setLoading(isLoading) {
+				const resultsDiv = document.getElementById("results");
+
+				if (isLoading) {
+					resultsDiv.innerHTML = ""; // clear results immediately
+					loader.style.display = "block";
+				} else {
+					loader.style.display = "none";
+				}
+			}
+
+			// Debounce utility
+			function debounce(fn, delay) {
+				let timer;
+				return function (...args) {
+					clearTimeout(timer);
+					timer = setTimeout(() => fn.apply(this, args), delay);
+				};
+			}
+
+			// API calls after debounce
+			async function handleInput(text) {
+				if (!text.trim()) {
+					document.getElementById("results").innerHTML = "";
+					return;
+				}
+
+				setLoading(true); // show loader
+
+				try {
+					// API call #1 - Translation
+					const translateRes = await fetch(
+						"http://localhost:3000/api/translate",
+						{
+							method: "POST",
+							headers: { "Content-Type": "application/json" },
+							body: JSON.stringify({
+								q: text,
+								sl: "en",
+								dl: currentLang, // 👈 use selected language
+							}),
+						}
+					);
+					const translation = await translateRes.json();
+
+					// API call #2 - Meme generation
+					const memeRes = await fetch(
+						"http://localhost:3000/api/memes",
+						{
+							method: "POST",
+							headers: { "Content-Type": "application/json" },
+							body: JSON.stringify({ q: text }),
+						}
+					);
+					const memes = await memeRes.json();
+
+					// Render results
+					renderResults(translation?.AiResponse, memes);
+				} catch (err) {
+					console.error("Error:", err);
+				} finally {
+					setLoading(false); // hide loader no matter what
+				}
+			}
+
+			function renderResults(translation, memes) {
+				const resultsDiv = document.getElementById("results");
+				resultsDiv.innerHTML = "";
+
+				// Translation + Alternatives in one card
+				if (translation) {
+					const translationBox = document.createElement("div");
+					translationBox.className = "card translation-card";
+					translationBox.innerHTML = `
+				<h3>✨ Translation</h3>
+				<p class="main-translation">${translation.translation}</p>
+				<p class="main-translation">${translation.english_tranform}</p>
+			`;
+
+					if (
+						translation.alternatives &&
+						translation.alternatives.length > 0
+					) {
+						const altBox = document.createElement("div");
+						altBox.className = "alternatives";
+						altBox.innerHTML = `<h4>🔄 Alternatives</h4>`;
+						const ul = document.createElement("ul");
+						translation.alternatives.forEach((alt) => {
+							const li = document.createElement("li");
+							li.textContent = alt;
+							ul.appendChild(li);
+						});
+						altBox.appendChild(ul);
+						translationBox.appendChild(altBox);
+					}
+
+					resultsDiv.appendChild(translationBox);
+				}
+
+				// Memes (GIFs)
+				if (memes && memes.length > 0) {
+					const memeBox = document.createElement("div");
+					memeBox.className = "card meme-card";
+					memeBox.innerHTML = `<h3>😂 Memes</h3>`;
+					const memeGrid = document.createElement("div");
+					memeGrid.className = "meme-grid";
+
+					memes.forEach((meme) => {
+						const img = document.createElement("img");
+						img.src = meme.images.original.url;
+						img.alt = "meme gif";
+						memeGrid.appendChild(img);
+					});
+
+					memeBox.appendChild(memeGrid);
+					resultsDiv.appendChild(memeBox);
+				}
+			}
+
+			// Debounced input listener (e.g., 800ms delay)
+			const debouncedHandler = debounce(() => {
+				handleInput(input.value);
+			}, 800);
+
+			input.addEventListener("input", debouncedHandler);
+
+			// Custom select
+			selected.addEventListener("click", () => {
+				options.style.display =
+					options.style.display === "block" ? "none" : "block";
+			});
+
+			options.addEventListener("click", (e) => {
+				if (e.target.tagName === "LI") {
+					selected.textContent = e.target.textContent;
+					currentLang = e.target.getAttribute("data-value"); // 👈 capture language
+					options.style.display = "none";
+
+					// 👇 Trigger new translation if input has text
+					if (input.value.trim()) {
+						handleInput(input.value);
+					}
+				}
+			});
+		</script>
+	</body>
+</html>
